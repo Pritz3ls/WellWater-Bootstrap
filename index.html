@@ -14,12 +14,12 @@
     </head>
     <body>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary" style="position: sticky; z-index: 99;">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="">
+                <img src="logo.png" alt="WellWater Logo">
               </a>
-              <a class="navbar-brand" href="#" style="font-weight:600;">Well Water</a>
+              <a class="navbar-brand" href="#" style="font-weight:600;">WellWater</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -37,11 +37,11 @@
                 </div>
             </div>
         </nav>
-        
+        <div style="display: hidden;"></div>
         <!-- About Container -->
         <div class="about-wrap" id="home">
         </div>
-        <div class="container">
+        <div class="container" style="margin-top: 60vh;">
             <h1>SAVE THE OCEAN</h1>
             <p>At WellWater, we're passionate about preserving the beauty and health of our oceans. We focus on cleaning up trash from beaches and waterways, promoting sustainable practices, and raising awareness about the importance of a trash-free ocean. Join us in making waves for a cleaner, healthier planet</p>
         </div>
@@ -154,8 +154,8 @@
                     <label for="exampleFormControlTextarea1" class="form-label">Message</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
             </div>
-            <button type="submit" class="btn btn-primary flex-end">Send Message</button>
         </div>
 
         <!-- Footer -->

@@ -7,6 +7,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 .navbar-brand img{
     width: 50px;
@@ -15,15 +16,22 @@ body{
 
 .about-wrap{
     background: linear-gradient(
-        rgba(255,255,255,0.1),
-        rgba(255,255,255,1)
+        rgba(255,255,255,0) 30%,
+        rgba(255,255,255,1) 70%
     ), url(about-wrap-var.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
-    height: 400px;
-    min-height: 200px;
-    max-height: 400px;
+    position: absolute;
+
+    height: 640px;
+    width: 100vw;
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
 }
 
 .cards-container{
