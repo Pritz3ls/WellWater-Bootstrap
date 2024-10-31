@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --backgroundColor: rgba(255, 255, 255, 1);
+    --primaryCol: rgb(0, 128, 255);
+    --secondaryCol: rgb(84, 84, 84);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-brand img{
+    width: 50px;
+    height: 50px;
+}
+
+.about-wrap{
+    background: linear-gradient(
+        rgba(255,255,255,0.1),
+        rgba(255,255,255,1)
+    ), url(about-wrap-var.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 400px;
+    min-height: 200px;
+    max-height: 400px;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+h1,h2,h3,h4{
+    color: var(--primaryCol);
+}
+p{
+    color: var(--secondaryCol);
+}
